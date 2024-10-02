@@ -1,0 +1,123 @@
+body {
+  background-color: rgb(191, 191, 191);
+}
+.box-one {
+  position: relative;
+  top: 200px;
+  left: 400px;
+  width: 350px;
+  z-index: 1;
+  border-radius: 50px;
+  padding: 100px;
+  background-color: rgb(255, 255, 255);
+  border: 5px rgb(255, 255, 255) solid;
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  align-self: center;
+  justify-content: center;
+  width: 400px;
+}
+.boxtwo {
+  background-color: rgb(220, 220, 220);
+  padding: 200px;
+  border-radius: 50px;
+  top: 10px;
+  left: 335px;
+
+  position: absolute;
+
+  width: 350px;
+  height: 500px;
+}
+
+.buy > button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 30px 100px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(3, 156, 47),
+    rgb(53, 192, 192)
+  );
+  color: rgb(20, 20, 20);
+  font-size: large;
+}
+
+.main > .sub1 {
+  margin-top: 30px;
+}
+.main > .sub2 {
+  margin-top: 30px;
+}
+.sub2 > p {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.sub2 > p {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.sub2 > .icon1 {
+  display: flex;
+  align-items: center;
+}
+.sub2 > .icon2 {
+  display: flex;
+  align-items: center;
+}
+.main > .sub3 {
+  margin-top: 40px;
+}
+
+.sub3 {
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  padding: 20px;
+}
+.zipcode > input {
+  border: none;
+  display: flex;
+  background-color: transparent;
+}
+.zipcode {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  border: gray 3px solid;
+  border-radius: 5px;
+  padding: 10px;
+  height: 30px;
+  margin: 5px;
+  margin-top: 10px;
+}
+.zipcheck {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+.check button {
+  display: flex;
+  padding: 20px;
+  width: 100px;
+  background-color: white;
+  border-color: white;
+  border-radius: 10px;
+  border-left: 20px;
+}
+
+.pickup > button {
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 30px 100px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(138, 138, 236),
+    rgb(139, 23, 139)
+  );
+  color: rgb(20, 20, 20);
+  font-size: large;
+}

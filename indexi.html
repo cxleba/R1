@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (max-width: 760px) {
+        .swiper-button-next {
+          right: 20px;
+          transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+          left: 20px;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (max-width: 760px) {
+        .swiper-button-next {
+          right: 20px;
+          transform: rotate(90deg);
+        }
+
+        .swiper-button-prev {
+          left: 20px;
+          transform: rotate(90deg);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex bg-white h-[100px] items-center justify-between">
+      <div class="flex justify-start font-bold text-3xl pl-[190px]">Tripy</div>
+      <div class="flex gap-6">
+        <p class="font-bold underline underline-offset-8 text-red-500">Home</p>
+        <p class="text-gray-400">About</p>
+        <p class="text-gray-400">Services</p>
+        <p class="text-gray-400">Price</p>
+        <p class="text-gray-400">Contact</p>
+      </div>
+      <div class="flex justify-end gap-4 mx-[30px]">
+        <button>Login</button>
+        <button class="bg-red-500 p-3 text-white rounded-[100px]">
+          Register
+        </button>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="p-[200px] w-[800px]">
+        <h1 class="font-extrabold text-7xl w-[600px]">
+          Dare to live the life<br />
+          you've always <br />
+          wanted.
+        </h1>
+        <h3 class="text-gray-400 mt-6 text-xl">
+          Life is short and the world is wide. So, better<br />
+          get started
+        </h3>
+        <div class="flex mt-4 bg-white p-6 w-[450px] rounded-[100px] gap-4">
+          <p>
+            <i class="bx bxs-edit-location text-4xl text-red-500"></i>
+          </p>
+          <div>
+            <label for="Location" class="text-xs text-gray-500">Location</label>
+            <select class="text-xs text-gray-500">
+              <option value="Tema">Tema</option>
+              <option value="Accra">Accra</option>
+              <option value="Kasoa">Kasoa</option>
+              <option value="Osu">Osu</option>
+            </select>
+            <p class="font-bold text-sm">Allentown, New Mexico</p>
+          </div>
+          <div class="border-l-2 pl-4 border-gray-300">
+            <label for="date" class="text-xs text-gray-400"></label>
+            <input type="date" class="text-xs text-gray-400" />
+            <p class="font-bold text-sm">04 Aug, 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative pl-[120px]">
+        <img
+          src="picone.jpg"
+          alt="man with camera"
+          class="rounded-t-full h-[700px] w-[450px] bg-cover mt-[100px]"
+        />
+      </div>
+
+      <div class="absolute top-[600px] right-[200px]">
+        <img
+          src="pictwo.jpg"
+          alt="woman with flowers"
+          class="rounded-t-full rounded-b-full bg-contain border-4 border-gray-100 shadow-md h-[250px] w-[200px]"
+        />
+      </div>
+    </div>
+
+    <div class="flex">
+      <div class="pl-[200px] w-[800px]">
+        <div class="relative">
+          <img
+            src="place1.png"
+            alt="man with camera"
+            class="rounded-t-full rounded-b-full h-[700px] w-[480px] bg-cover mt-[100px]"
+          />
+        </div>
+
+        <div class="absolute top-[1380px] left-[500px]">
+          <img
+            src="place.png"
+            alt="woman with flowers"
+            class="rounded-t-full rounded-b-full bg-contain border-4 border-gray-100 shadow-md h-[450px] w-[290px]"
+          />
+        </div>
+      </div>
+
+      <div class="pl-[120px] pt-[300px] w-[800px]">
+        <h3 class="text-red-500 font-extrabold">ABOUT US</h3>
+        <h1 class="font-extrabold text-6xl w-[600px] mt-2">
+          Our tour plan is to<br />
+          fulfill your dream wish
+        </h1>
+        <h3 class="text-gray-400 text-xl mt-[40px]">
+          Understand to achieve anything requires faith and<br />
+          belief in yourself, vision, and hard work, determination,<br />
+          and dedication.
+        </h3>
+        <div class="flex gap-[70px]">
+          <div class="mt-[40px]">
+            <p class="font-extrabold text-4xl text-red-500">15</p>
+            <p class="text-gray-500">Years of <br />Experience</p>
+          </div>
+          <div class="mt-[40px]">
+            <p class="font-extrabold text-4xl text-red-500">1k</p>
+            <p class="text-gray-500">Successful <br />Trips</p>
+          </div>
+          <div class="mt-[40px]">
+            <p class="font-extrabold text-4xl text-red-500">20k</p>
+            <p class="text-gray-500">Happy<br />customers</p>
+          </div>
+          <div class="mt-[40px]">
+            <p class="font-extrabold text-4xl text-red-500">4.9</p>
+            <p class="text-gray-500">Overall<br />Rating</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[200px] pl-[100px]">
+      <h3 class="text-red-500 text-[16px] font-extrabold">TOUR PACKAGES</h3>
+      <h1 class="text-6xl font-extrabold mt-2">
+        The amazing places around <br />the world
+      </h1>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper pt-[100px] pl-[120px] h-[600px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div class="text-center font-extrabold pt-[100px] pl-[120px]">
+      <h3 class="text-red-500 text-xl">TESTIMONIAL</h3>
+      <h1 class="text-6xl">Satisfied travelers around <br />the world</h1>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper pt-[100px] pl-[120px] h-[600px]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div
+            class="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96"
+          >
+            <div
+              class="relative h-56 m-2.5 overflow-hidden text-white rounded-md"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80"
+                alt="card-image"
+              />
+            </div>
+            <div class="p-4">
+              <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                Website Review Check
+              </h6>
+              <p class="text-slate-600 leading-normal font-light">
+                The place is close to Barceloneta Beach and bus stop just 2 min
+                by walk and near to &quot;Naviglio&quot; where you can enjoy the
+                main night life in Barcelona.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <button
+                class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+              >
+                Read more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="text-center pt-[100px] pl-[120px] pt-[200px]">
+      <h1 class="text-6xl font-extrabold">
+        We can do anything we want to<br />if we stick it too long enough
+      </h1>
+      <h3 class="text-gray-500 text-lg pt-[40px]">
+        Do what you can, with what you have, where you are.
+      </h3>
+      <button
+        class="bg-red-500 mt-[40px] p-[20px] text-white text-base w-[150px] rounded-[100px]"
+      >
+        See all tours
+      </button>
+    </div>
+
+  <div class="flex gap-[50px] pl-[220px]">
+<div class="bg-white w-[350px] p-[10px] rouned-md align-text-left rounded-[20px] h-[350px]">
+  <img src="portugal.jpg" alt="portugal" class="size 20 rounded-[20px]"/>
+  <h1 class="font-extrabold flex text-xl pt-2">Porto, Portugal</h1>
+  <p class="text-red-500 flex text-xl font-extrabold pt-2">$150</p>
+  <p class="flex gray-200-">7 days tour</p>
+</div>
+
+<div class="mt-[150px] bg-white w-[250px] p-[10px] rouned-md align-text-left rounded-[20px] h-[270px]">
+  <img src="portugal.jpg" alt="portugal" class="size 20 rounded-[20px]"/>
+  <h1 class="font-extrabold flex text-xl pt-2">Porto, Portugal</h1>
+  <p class="text-red-500 flex text-xl font-extrabold pt-2">$150</p>
+  <p class="flex gray-200-">7 days tour</p>
+</div>
+
+<div class="mt-[150px] bg-white w-[250px] p-[10px] rouned-md align-text-left rounded-[20px] h-[270px]">
+  <img src="portugal.jpg" alt="portugal" class="size 20 rounded-[20px]"/>
+  <h1 class="font-extrabold flex text-xl pt-2">Porto, Portugal</h1>
+  <p class="text-red-500 flex text-xl font-extrabold pt-2">$150</p>
+  <p class="flex gray-200-">7 days tour</p>
+</div>
+
+<div class="bg-white w-[350px] p-[10px] rouned-md align-text-left rounded-[20px] h-[350px]">
+  <img src="portugal.jpg" alt="portugal" class="size 20 rounded-[20px]"/>
+  <h1 class="font-extrabold flex text-xl pt-2">Porto, Portugal</h1>
+  <p class="text-red-500 flex text-xl font-extrabold pt-2">$150</p>
+  <p class="flex gray-200-">7 days tour</p>
+</div>
+
+</div>
+
+<div class="flex">
+<div class="pl-[190px] mt-[200px] bg-color-none pb-[200px]">
+  <div class="flex justify-start font-extrabold text-3xl ">Tripy</div>
+  <p class="mt-[20px] text-gray-500">4517 Washington Ave.</p>
+  <p class="text-gray-500">Manchester Kentucky 39495</p>
+  <p class="text-3xl mt-[20px] gap-6 text-red-500"> <i class='bx bxl-facebook-circle'></i><i class='bx bxl-instagram-alt' ></i><i class='bx bxl-youtube' ></i></p>
+</div>
+<div class="pl-[100px] mt-[200px] bg-color-none pb-[200px]">
+  <div class="flex justify-start font-extrabold text-xl ">About</div>
+  <p class="mt-[20px] text-gray-500">About us</p>
+  <p class="text-gray-500 mt-[20px]">Features</p>
+  <p class="text-gray-500 mt-[20px]">News</p>
+  <p class="text-gray-500 mt-[20px]">Plans</p>
+</div>
+<div class="pl-[100px] mt-[200px] bg-color-none pb-[200px]">
+  <div class="flex justify-start font-extrabold text-xl ">Company</div>
+  <p class="mt-[20px] text-gray-500">Try Trips</p>
+  <p class="text-gray-500 mt-[20px]">Partner with us</p>
+  <p class="text-gray-500 mt-[20px]">FAQs</p>
+  <p class="text-gray-500 mt-[20px]">Blogs</p>
+</div>
+<div class="pl-[100px] mt-[200px] bg-color-none pb-[200px]">
+  <div class="flex justify-start font-extrabold text-xl ">Support</div>
+  <p class="text-gray-500 mt-[20px]">Account</p>
+  <p class="text-gray-500 mt-[20px]">Support Center</p>
+  <p class="text-gray-500 mt-[20px]">Feedback</p>
+  <p class="text-gray-500 mt-[20px]">Contact us</p>
+</div>
+<div class="pl-[100px] mt-[200px] bg-color-none pb-[200px]">
+  <div class="flex justify-start font-extrabold text-xl ">Newsletter</div>
+  <p class="text-gray-500 mt-[20px]">Subscribe to our Newsletter and get <br> exciting offers</p>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+        return direction;
+      }
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+  </body>
+</html>

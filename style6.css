@@ -1,0 +1,126 @@
+* {
+  border: 2px red solid;
+}
+.navigation {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftnav {
+  position: relative;
+  display: flex;
+}
+
+.bizzy {
+  display: flex;
+  gap: 10px;
+}
+
+.logo img {
+  margin-top: 17px;
+  height: 30px;
+  width: 30px;
+  /* object-fit: cover; */
+}
+
+.midnav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.rightnav {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  color: rgb(16, 109, 77);
+}
+
+.rightnav > button {
+  margin-top: 5px;
+  border-radius: 10px;
+  height: 50px;
+  width: 170px;
+  color: white;
+  background-color: rgb(16, 109, 77);
+}
+
+.midsection {
+  background-color: rgb(16, 109, 77);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 20px;
+}
+.midsection > .textbox {
+  color: rgb(255, 255, 255);
+  align-self: left;
+  font-size: 30px;
+}
+.textbox > h4 {
+  font-size: medium;
+  color: rgb(190, 215, 205);
+}
+
+.textbox > button {
+  margin-top: 35px;
+  background-color: rgb(224, 246, 238);
+  color: rgb(16, 109, 77);
+  padding: 15px;
+  width: 170px;
+  border-radius: 10px;
+}
+.pic img {
+  width: 700px;
+  height: 700px;
+  object-fit: cover;
+}
+.pic1 img {
+  width: 200px;
+  height: 220px;
+  object-fit: fill;
+  position: absolute;
+  top: 550px;
+  left: 660px;
+  border-radius: 15px;
+}
+
+.highimpact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 80px;
+  font-size: 30px;
+}
+.logoipsum img {
+  display: flex;
+}
+
+body > .logoipsum img {
+  border: 2px rgb(255, 0, 0) solid;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  left: 400px;
+  top: 0px;
+  object-fit: fill;
+  width: 900px;
+}
+body > .productfeature {
+  justify-content: center;
+  margin-top: 150px;
+  height: 10px;
+}
+.productfeature h5 {
+  display: flex;
+  justify-content: center;
+  color: rgb(16, 109, 77);
+}
+.productfeature h2 {
+  display: flex;
+  justify-content: center;
+}
